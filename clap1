@@ -1,20 +1,18 @@
 #include <stdio.h>
 int main()
 {
-int a,b,c,d,n;
-scanf("%d %d %d",&a,&b,&n);
-c=a;
-d=b;
-for(int i=1;i<=n;i++)
-{
-if(i%2==1)
-c=c*2;
-else
-d=d*2;
+int l,w,h;
+scanf("%d",&l);
+scanf("%d %d",&w,&h);
+if((w<l)||(h<l)){
+printf("UPLOAD ANOTHER");
 }
-if(c>=d)
-printf("%d",c/d);
-else
-printf("%d",d/c);
+else if(w==h){
+printf("ACCEPTED");
+}
+else{
+printf("CROP IT");
+}
 return 0;
 }
+
